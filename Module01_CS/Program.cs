@@ -5,6 +5,7 @@
         static void Main(string[] args)
         {
             System.Console.WriteLine("bla");
+            // mor bla
 
             if (System.Diagnostics.Debugger.IsAttached)
             {
