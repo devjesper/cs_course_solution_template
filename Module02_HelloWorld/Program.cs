@@ -1,11 +1,12 @@
-﻿namespace Module02_HelloWorld
+﻿using static System.Console;
+namespace Module02_HelloWorld
 {
     class Program
     {
         static void Main(string[] args)
         {
 
-            
+            DebugDemo();
 
             if (System.Diagnostics.Debugger.IsAttached)
             {
@@ -14,13 +15,14 @@
             }
         }
 
-        static void DebugDemo() {
+        static void DebugDemo()
+        {
 
             int i = 10;
             int u = 20;
             u = u + i;
-            string name = "Mikkel";
-            System.Console.WriteLine(name);
+               string name = "Mikkel";
+                    System.Console.WriteLine(name);
             string upperName = name.ToUpper();
             System.Console.WriteLine(upperName);
 
