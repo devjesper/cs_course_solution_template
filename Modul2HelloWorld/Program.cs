@@ -18,7 +18,7 @@ namespace Modul2HelloWorld
             WriteLine("Velkommen {0} {1}", a.ToUpper(), 500);
 
             ReadKey();
-
+            ReadKey();
 
 
 
