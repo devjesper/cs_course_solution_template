@@ -7,12 +7,7 @@ using System.Threading.Tasks;
 namespace Module3
 {
 
-    enum FilTyper
-    {
-        csv,
-        pdf,
-        txt
-    }
+    
     class Program
     {
         static void Main(string[] args)
@@ -52,12 +47,22 @@ namespace Module3
 
         }
 
-       
+        enum FilTyper
+        {
+            csv,
+            pdf,
+            txt
+        }
 
         struct Person
         {
             public int id;
             public string Navn;
         }
+
+
+
+
     }
+    
 }
