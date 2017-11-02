@@ -10,16 +10,51 @@ namespace Module4
     {
         static void Main(string[] args)
         {
+            
+
             //modul4 opgave 1
-          //  Array();
+            //Array();
 
-            //modul4 opgave 2
-            differenceStructAndClass();
+            ////modul4 opgave 2
+            //differenceStructAndClass();
 
-            //modul4 
-            stringPlay();
+            ////modul4 opg 3 
+            //stringPlay();
+
+            //opgave 4
+            my10tabel();
 
             Console.ReadLine();
+        }
+
+        private static void my10tabel()
+        {
+            int p = 0;
+            for (int i = 1; i < 11; i++)
+            {
+                for (int j = 1; j < 11; j++)
+                {
+                    p = i * j;
+                    int mod = p % 2;
+
+                    if (p > 50)
+                    {
+                        if(mod == 0)
+                            Console.ForegroundColor = ConsoleColor.Green;
+                        else
+                            Console.ForegroundColor = ConsoleColor.Yellow;
+                    }
+                    else if (mod == 0)
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                    else
+                        Console.ForegroundColor = ConsoleColor.White;
+
+
+                    Console.Write("{0}\t", p);
+                }
+                Console.WriteLine();
+                
+            }
         }
 
         private static void stringPlay()
@@ -43,6 +78,10 @@ namespace Module4
             Console.ForegroundColor= ConsoleColor.White;
 
             Console.WriteLine(split[0]);
+
+            System.IO.File.WriteAllText(@"c:\temp\text.txt", samlnavn);
+
+            
         }
 
         public static void Array()
