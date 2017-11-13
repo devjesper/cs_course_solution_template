@@ -12,6 +12,8 @@ namespace Ludo
 
         public int værdi;
         private bool snyd;
+        
+
 
         public Terning()
         {
