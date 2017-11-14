@@ -15,6 +15,10 @@ namespace Module7
             Console.WriteLine(t1.Højde);
             Console.WriteLine( t1.Areal);
 
+
+
+            Console.WriteLine(Arealberegniner.BeregnArealFikant(10, 10));
+            Console.WriteLine(Arealberegniner.BeregnArealCirkle(10));
             Console.ReadLine();
 
         }
@@ -40,6 +44,21 @@ namespace Module7
             this.Højde = højde;
         }
 
+
+    }
+
+    public static class Arealberegniner
+    {
+
+        public static double BeregnArealFikant(double højde,double bredde )
+        {
+            return højde * bredde;
+        }
+
+        public static double BeregnArealCirkle(double radius)
+        {
+            return Math.Pow(radius, 2) * Math.PI;
+        }
 
     }
 }
