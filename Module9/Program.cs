@@ -16,7 +16,7 @@ namespace Module9
             }
             catch(FormatException ex)
             {
-                Console.WriteLine("formatex {0}", );
+                Console.WriteLine("formatex {0}", ex);
             }
             catch(InvalidCastException ex)
             {

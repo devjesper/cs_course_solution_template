@@ -80,7 +80,7 @@ namespace Module8
     {
         public string Fornavn { get; set; }
         public string Efternavn { get; set; }
-        public   string FuldtNavn()
+        public string FuldtNavn()
         {
             return "jeg hedder "+Fornavn + " " + Efternavn +" og er en person";
         }
@@ -88,7 +88,7 @@ namespace Module8
     class Elev :Person
     {
         public string KlasseLokale { get; set; }
-        public   string FuldtNavn()
+        public string FuldtNavn()
         {
             return "jeg hedder " + Fornavn + " " + Efternavn + " og er en Elev i klasse " + KlasseLokale;
         }
